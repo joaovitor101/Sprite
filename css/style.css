@@ -1,0 +1,33 @@
+#anima-div{
+    background: url("../imgs/ciclo-animacao.jpg");
+    width: 250px;
+    height: 240px;
+    animation: anima-sprite 1s steps(8) infinite;
+}
+
+#anima-div2{
+
+    background: url("../imgs/coelho.png");
+    width: 100px;
+    height: 160px;
+    animation: anima-sprite2 2s steps(6) infinite;
+}
+
+@keyframes anima-sprite{
+    from{background-position: 0px;}
+    to{background-position: -1920px;}
+}
+
+@keyframes anima-sprite2{
+    from{background-position: 0px;}
+    to{background-position: -1920px;}
+}
+
+.content{
+    font-size: 20px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
